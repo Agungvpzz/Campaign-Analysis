@@ -30,13 +30,12 @@ The focus is on:
 The following key questions guide this analysis:
 1. What is the overall distribution of conversions?
 2. How do categorical and numerical features relate to conversion?
-3. Do campaign conversion rates vary across economic factors?
-4. Do campaign conversion rates differ across demographic factors?
-5. Are longer calls more successful?
-6. Does repeated contact increase conversions?
-7. What is the optimal number of contacts before diminishing returns occur?
-8. Which contact channels are most effective?
-9. Are there specific days, weeks, or months with significantly higher conversion rates?
+3. Do campaign conversion rates vary across economic and demographic factors?
+4. Are longer calls more successful?
+5. Does repeated contact increase conversions?
+6. What is the optimal number of contacts before diminishing returns occur?
+7. Which contact channels are most effective?
+8. Are there specific days, weeks, or months with significantly higher conversion rates?
 
 
 ## C. Data Collection
@@ -55,9 +54,11 @@ https://www.kaggle.com/datasets/janiobachmann/bank-marketing-dataset?resource=do
 
 ### 2. How do categorical and numerical features relate to conversion?
 <div align=center>
+  <img width="744" height="422" alt="image" src="https://github.com/user-attachments/assets/1d49e6b8-2c02-4919-8566-2b329f2d896a" />
   <img width="1056" height="512" alt="image" src="https://github.com/user-attachments/assets/aecf68e4-8b09-4806-8ad7-60aadb51e2f1" />
 </div>
 
+- Chi-square tests indicate a significant association between all categorical features and conversion outcomes
 - The ‘month’ variable stands out with the highest χ² score of 1040, indicating a stronger association with conversion rates than other features.
 - It is followed by variables such as ‘previous outcome’, ‘contact’, and ‘first campaign’, each with χ² scores exceeding 500, suggesting they also have a meaningful impact on conversion patterns.
 <br><br>
@@ -74,14 +75,16 @@ https://www.kaggle.com/datasets/janiobachmann/bank-marketing-dataset?resource=do
   <img width="1104" height="472" alt="image" src="https://github.com/user-attachments/assets/fa8fd0e1-2b90-4de3-8f94-741d216bc8cb" />
 </div>
 
-- Longer calls, higher conversions: Longer call durations stand out with the highest positive correlation to conversion rate (0.45). It’s a clear signal, when prospects are genuinely curious, they stick around, ask questions, and engage meaningfully. Shorter calls often signal disinterest or early drop-off.
-- Echoes from the past: Customers with more touchpoints from previous campaigns show a mild uptick in conversion likelihood (correlation 0.14). While not a strong effect, it suggests that past engagement might prime them for future decisions.
-- Too much contact, too little interest: Oddly enough, heavy outreach during the current campaign seems counterproductive. With a slightly negative correlation of -0.13, it hints at possible oversaturation, where repeated contact might cause customers to tune out or resist the offer altogether.
+- **Longer calls, higher conversions**: Longer call durations stand out with the highest positive correlation to conversion rate (0.45). It’s a clear signal, when prospects are genuinely curious, they stick around, ask questions, and engage meaningfully. Shorter calls often signal disinterest or early drop-off.
+- **Echoes from the past**: Customers with more touchpoints from previous campaigns show a mild uptick in conversion likelihood (correlation 0.14). While not a strong effect, it suggests that past engagement might prime them for future decisions.
+- **Too much contact, too little interest**: Oddly enough, heavy outreach during the current campaign seems counterproductive. With a slightly negative correlation of -0.13, it hints at possible oversaturation, where repeated contact might cause customers to tune out or resist the offer altogether.
 
 
 ## E. Customer Segment Analysis
 
-### 3. Do campaign conversion rates vary across economic factors?
+### 3. Do campaign conversion rates vary across economic and demographic factors?
+
+####  Economic Factors
 <p align="center">  
   <img src="https://github.com/user-attachments/assets/008590ba-650b-42b8-9de1-6807503bd263"/>
   <img src="https://github.com/user-attachments/assets/46f01104-d2d8-4990-8c69-b709aa01bfdc"/>  
@@ -94,7 +97,7 @@ https://www.kaggle.com/datasets/janiobachmann/bank-marketing-dataset?resource=do
 - Customers who end up subscribing to a term deposit generally have higher account balances, whether you're looking at the total, average, or median values.
   - However, the effect size is relatively small, so the difference isn't particularly strong.
 
-### 4. Do campaign conversion rates differ across demographic factors?
+####  Demographic Factors
 <p align="center">
   <img width="697" height="148" alt="image" src="https://github.com/user-attachments/assets/9173773a-9b1e-4b46-ab46-b905eb15e9db" />
   <img width="1076" height="514" alt="image" src="https://github.com/user-attachments/assets/51038732-a14b-48de-bc81-d67c14117f6f" />
@@ -106,7 +109,7 @@ https://www.kaggle.com/datasets/janiobachmann/bank-marketing-dataset?resource=do
 
 ## F. Campaign Fatigue Analysis
 
-### 5. Are longer calls more successful?
+### 4. Are longer calls more successful?
 <p align="center">
   <img width="1094" height="369" alt="image" src="https://github.com/user-attachments/assets/cf32d362-5e26-4918-ae0e-20f5d4d66cf5" />
 </p>
@@ -125,7 +128,7 @@ https://www.kaggle.com/datasets/janiobachmann/bank-marketing-dataset?resource=do
 - These patterns indicate that call length isn't a persuasive force on its own, it’s a self-selection mechanism. Longer calls don’t drive conversions directly, but they reveal which customers are genuinely interested. By the 15-minute mark, nearly all non-converters have dropped off, leaving behind a high-intent segment with strong conversion potential.
 - This makes call duration a powerful tool for lead scoring and agent prioritization, not as a tactic to stretch conversations, but as a signal to guide targeting decisions and optimize engagement strategy.
 
-### 6. Does repeated contact increase conversions
+### 5. Does repeated contact increase conversions?
 <p align="center">
   <img width="953" height="363" alt="image" src="https://github.com/user-attachments/assets/c58f1680-429e-4efa-964e-7e1388e06b69" />
 < /p>
@@ -135,7 +138,7 @@ https://www.kaggle.com/datasets/janiobachmann/bank-marketing-dataset?resource=do
 - While the first contact shows strong initial impact, the follow-up attempts play an equally critical role in boosting the overall conversion rate.
 - The data underscores that sustained outreach significantly enhances campaign effectiveness.
 
-### 7. What is the optimal number of contacts before diminishing returns occur?
+### 6. What is the optimal number of contacts before diminishing returns occur?
 <p align="center">
   <img width="1109" height="450" alt="image" src="https://github.com/user-attachments/assets/4dcdd1fe-a4da-4697-a664-101ae489249f" />
 </p>
@@ -151,7 +154,7 @@ https://www.kaggle.com/datasets/janiobachmann/bank-marketing-dataset?resource=do
 
 ## G. Contact Type Effectiveness
 
-### 8. Which contact channels are most effective?
+### 7. Which contact channels are most effective?
 <p align="center">
   <img width="1110" height="283" alt="image" src="https://github.com/user-attachments/assets/d22a94da-8ac3-492a-b16a-9c83ad691c09" />
 </p>
@@ -172,7 +175,7 @@ https://www.kaggle.com/datasets/janiobachmann/bank-marketing-dataset?resource=do
 ## H. Optimizing Outreach Timing: One-Attempt Analysis
 Under the "Optimizing Campaign Timing" section, we filter the dataset to include only records where the number of contacts equals one. This constraint allows us to precisely assess which specific contact date influences campaign effectiveness. When a customer has multiple contact attempts, the dataset does not indicate when earlier contacts occurred, making it impossible to isolate the impact of any single date.
 
-### 9. Are there specific days, weeks, or months with significantly higher conversion rates?
+### 8. Are there specific days, weeks, or months with significantly higher conversion rates?
 
 #### a. Monthly Conversion
 <p align="center">  
@@ -264,5 +267,54 @@ Our model correctly classified 1948 out of 2233 cases.
 
 
 
+## J. Conclusion
+1. What is the overall distribution of conversions?
+   - The data shows that the Portugal bank campaign achieved a conversion rate of nearly 50%, with 5,289 customers accepting the offer.
+2. How do categorical and numerical features relate to conversion?
+  - Chi-square tests indicate that all categorical features are significantly associated with conversion outcomes. Among them, six show a moderate association strength based on Cramér's V: months, previous_outcome, channel (contact_type), last_contact, first_campaign, and housing.
+  - Mann–Whitney U test reveals that mduration (call duration in minutes) has the strongest positive relationship with conversion, with a large effect size based on the rank-biserial correlation. Several other numerical features also have statistically significant p-values, but their effect sizes are small.
+3. Do campaign conversion rates vary across economic and demographic factors?
+  - Demographics with minimal debt and housing obligations, as well as students and retirees, demonstrate the highest responsiveness to term deposit offers. Financial background and occupation appear to play key roles in influencing conversion likelihood.
+4. Are longer contact calls more successful?
+  - Call duration reflects conversion intent more than it drives it. Most non-converters hang up within 15 minutes, while converters either commit early or stay engaged beyond that point.
+  - These timing patterns make call length a reliable indicator for lead scoring and agent prioritization—helping teams focus on high-intent callers without needing to prolong conversations.
+5. Does repeated contact increase conversions?
+  - Repeated contact clearly enhances conversion performance. While nearly half of conversions occur on the first attempt (48.42%), follow-ups account for the majority (51.58%), demonstrating that persistent outreach is just as crucial as initial engagement. This highlights the strategic value of multi-touch campaigns in maximizing overall effectiveness.
+6. What is the optimal number of contacts before diminishing returns occur?
+  - Most conversions happen within the first five contact attempts—over 95% of total successes. Additional outreach beyond this point yields only small gains (around 4%) but requires a large number of extra calls. By limiting follow-ups to 4–5 touches, the campaign could reduce unnecessary contact by 36%, saving time and resources without meaningfully sacrificing performance.
+7. Which contact channels are most effective?
+  - Cellular and telephone contacts work best, converting over half of customers. The ‘unknown’ contact type performs poorly—only 8% of attempts succeed. Since most conversions take 4–5 tries, focusing on proven channels and cutting back on low-performing ones can save time and improve results.
+8. Are there specific days, weeks, or months with significantly higher conversion rates?
+  - The data shows clear timing patterns in conversion rates across months and days, pointing to potentially high-yield outreach windows. However, since the dataset lacks detail on campaign design, employee involvement, or contact strategies, these trends should be interpreted with caution. Differences in team performance, messaging, or customer targeting could all play a role in the observed outcomes. Still, months like December, March, September, and October—and specific days such as the 1st, 3rd, 10th, and 25th—appear to align with higher success rates, suggesting useful benchmarks for future testing and optimization.
+
+
+## K. Recommendations for Improving the Marketing Campaign
+1. Make the Most of the First Contact
+  - Nearly half of the successful sign-ups happen on the first call.
+  - This means it’s critical to target the right people from the beginning. Use customer data and past results to prioritize the most likely responders right away.
+2. Follow Up—But Not Too Much
+  - People often need more than one nudge. In fact, over 50% of conversions happen after the first contact, especially by the 4th or 5th attempt.
+  - But calling too many times after that brings little benefit and wastes time. Stop after 5 tries to save resources while keeping results strong.
+3. Pay Attention to Call Duration
+  - If someone stays longer on the phone, it usually means they’re curious or considering the offer.
+  - On the flip side, short calls often signal rejection.
+  - Use this to your advantage: follow up quickly with longer-call leads while reducing effort on those who hang up early.
+4. Focus on the Right Groups
+  - Retired people and students are more likely to accept the offer—probably because they’re less busy and more open to having a conversation.
+  - Create custom messages and special strategies for these groups to improve results even further.
+5. Choose the Right Timing – But Test Before You Trust It
+  - The data shows that certain months (like March, September, December) and specific days (1st, 3rd, 10th, 25th) had better conversion rates than others.
+  - However, the dataset does not reveal how each campaign was conducted—such as who made the call, the tone of the messaging, or which types of customers were contacted. These missing factors may have influenced conversions and should be taken into account when interpreting the results.
+  - So while these timing patterns are interesting, they should be treated as starting points for A/B testing, not fixed rules.
+6. Use the Best Contact Channels
+  - Mobile and telephone calls are the most effective. They lead to over 50% of sign-ups.
+  - Avoid or fix channels that show poor results (like the “unknown” type) to save effort and improve results.
+7. Score and Prioritize Your Leads
+  - Use what you know—like how long someone stays on the phone, their job, or whether they’ve said "yes" before—to rank leads by potential.
+  - Focus your team’s time and budget on those with higher chances of converting.
+8. Avoid Being Too Pushy
+  - Be careful not to annoy potential customers with too many calls.
+  - If someone clearly isn’t interested after a few contacts, let them go.
+  - This not only protects your brand image—it also respects your audience’s time.
 
 
