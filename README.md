@@ -222,5 +222,47 @@ Under the "Optimizing Campaign Timing" section, we filter the dataset to include
 - Day 19 stands out with the lowest conversion rate, highlighting a potential inefficiency in outreach timing on this date.
 
 
+## I. Model Development
+
+### Model Performance Summary
+<p align="center">
+  <img width="617" height="167" alt="image" src="https://github.com/user-attachments/assets/20bb62b4-c323-4aad-82b8-faf77f970eae" />
+</p>
+
+- The model performs very well on the training set and maintains strong performance on the test set, indicating good generalization.
+- The performance on cross-validation (CV) is also close to test performance, suggesting that the model is stable and robust.
+- There’s no major sign of overfitting, as the performance metrics are reasonably close across all datasets.
+
+
+### Confusion Matrix
+<p align="center">
+  <img width="351" height="334" alt="image" src="https://github.com/user-attachments/assets/dfadcfa1-d0c9-42c8-9319-bb603466029d" />
+</p>
+
+Our model correctly classified 1948 out of 2233 cases.
+- True Negatives (TN) = 996 => Model correctly predicted class 0 (no conversion).
+- False Positives (FP) = 179 => Model predicted class 1 (conversion), but it was actually class 0.
+- False Negatives (FN) = 106 => Model predicted class 0 (no conversion), but it was actually class 1.
+- True Positives (TP) = 952 => Model correctly predicted class 1 (conversion).
+
+### All Metrics Across Different Thresholds
+<p align="center">
+  <img width="1095" height="421" alt="image" src="https://github.com/user-attachments/assets/070e9a2e-000e-4bbd-8975-ed9b9251867c" />
+</p>
+
+- This threshold analysis plot provides a comprehensive view of how model performance metrics evolve as the decision threshold shifts from 0 to 1.
+- By visualizing metrics like precision, recall, F1 score, and specificity across thresholds, we can better tailor our model's behavior to business priorities—whether minimizing false negatives or reducing false positives.
+- It help us identify the optimal threshold that balances trade-offs between sensitivity and specificity, rather than relying solely on the default threshold of 0.5.
+
+
+### ROC-AUC
+<p align="center">
+  <img width="706" height="424" alt="image" src="https://github.com/user-attachments/assets/b80ecfa3-dd41-42e4-9310-34714d0310b4" />
+</p>
+
+- The high ROC AUC scores suggest the model has excellent classification power.
+
+
+
 
 
