@@ -307,7 +307,7 @@ Our model correctly classified 1948 out of 2233 cases.
 **3. Pay Attention to Call Duration**
   - If someone stays longer on the phone, it usually means they’re curious or considering the offer.
   - On the flip side, short calls often signal rejection.
-  - Use this to your advantage: follow up quickly with longer-call leads while reducing effort on those who hang up early.
+  - Follow up quickly with longer-call leads while reducing effort on those who hang up early.
 
 **4. Focus on the Right Groups**
   - Retired people and students are more likely to accept the offer, probably because they’re less busy and more open to having a conversation.
