@@ -268,58 +268,65 @@ Our model correctly classified 1948 out of 2233 cases.
 
 
 ## J. Conclusion
-1. What is the overall distribution of conversions?
-   - The data shows that the Portugal bank campaign achieved a conversion rate of nearly 50%, with 5,289 customers accepting the offer.
-2. How do categorical and numerical features relate to conversion?
+**1. What is the overall distribution of conversions?**
+  - The data shows that the Portugal bank campaign achieved a conversion rate of nearly 50%, with 5,289 customers accepting the offer.
+
+**2. How do categorical and numerical features relate to conversion?**
   - Chi-square tests indicate that all categorical features are significantly associated with conversion outcomes. Among them, six show a moderate association strength based on Cramér's V: months, previous_outcome, channel (contact_type), last_contact, first_campaign, and housing.
   - Mann–Whitney U test reveals that mduration (call duration in minutes) has the strongest positive relationship with conversion, with a large effect size based on the rank-biserial correlation. Several other numerical features also have statistically significant p-values, but their effect sizes are small.
-3. Do campaign conversion rates vary across economic and demographic factors?
+
+**3. Do campaign conversion rates vary across economic and demographic factors?**
   - Demographics with minimal debt and housing obligations, as well as students and retirees, demonstrate the highest responsiveness to term deposit offers. Financial background and occupation appear to play key roles in influencing conversion likelihood.
-4. Are longer contact calls more successful?
+
+**4. Are longer contact calls more successful?**
   - Call duration reflects conversion intent more than it drives it. Most non-converters hang up within 15 minutes, while converters either commit early or stay engaged beyond that point.
   - These timing patterns make call length a reliable indicator for lead scoring and agent prioritization, helping teams focus on high-intent callers without needing to prolong conversations.
-5. Does repeated contact increase conversions?
+
+**5. Does repeated contact increase conversions?**
   - Repeated contact clearly enhances conversion performance. While nearly half of conversions occur on the first attempt (48.42%), follow-ups account for the majority (51.58%), demonstrating that persistent outreach is just as crucial as initial engagement. This highlights the strategic value of multi-touch campaigns in maximizing overall effectiveness.
-6. What is the optimal number of contacts before diminishing returns occur?
+
+**6. What is the optimal number of contacts before diminishing returns occur?**
   - Most conversions happen within the first five contact attempts, over 95% of total successes. Additional outreach beyond this point yields only small gains (around 4%) but requires a large number of extra calls. By limiting follow-ups to 4–5 touches, the campaign could reduce unnecessary contact by 36%, saving time and resources without meaningfully sacrificing performance.
-7. Which contact channels are most effective?
+
+**7. Which contact channels are most effective?**
   - Cellular and telephone contacts work best, converting over half of customers. The ‘unknown’ contact type performs poorly, only 8% of attempts succeed. Since most conversions take 4–5 tries, focusing on proven channels and cutting back on low-performing ones can save time and improve results.
-8. Are there specific days, weeks, or months with significantly higher conversion rates?
+
+**8. Are there specific days, weeks, or months with significantly higher conversion rates?**
   - The data shows clear timing patterns in conversion rates across months and days, pointing to potentially high-yield outreach windows. However, since the dataset lacks detail on campaign design, employee involvement, or contact strategies, these trends should be interpreted with caution. Differences in team performance, messaging, or customer targeting could all play a role in the observed outcomes. Still, months like December, March, September, and October, and specific days such as the 1st, 3rd, 10th, and 25th, appear to align with higher success rates, suggesting useful benchmarks for future testing and optimization.
 
 
 ## K. Recommendations for Improving the Marketing Campaign
-1. Make the Most of the First Contact
+**1. Make the Most of the First Contact**
   - Nearly half of the successful sign-ups happen on the first call.
   - This means it’s critical to target the right people from the beginning. Use customer data and past results to prioritize the most likely responders right away.
 
-2. Follow Up, But Not Too Much
+**2. Follow Up, But Not Too Much**
   - People often need more than one nudge. In fact, over 50% of conversions happen after the first contact, especially by the 4th or 5th attempt.
   - But calling too many times after that brings little benefit and wastes time. Stop after 5 tries to save resources while keeping results strong.
 
-3. Pay Attention to Call Duration
+**3. Pay Attention to Call Duration**
   - If someone stays longer on the phone, it usually means they’re curious or considering the offer.
   - On the flip side, short calls often signal rejection.
   - Use this to your advantage: follow up quickly with longer-call leads while reducing effort on those who hang up early.
 
-4. Focus on the Right Groups
+**4. Focus on the Right Groups**
   - Retired people and students are more likely to accept the offer, probably because they’re less busy and more open to having a conversation.
   - Create custom messages and special strategies for these groups to improve results even further.
 
-5. Choose the Right Timing – But Test Before You Trust It
+**5. Choose the Right Timing – But Test Before You Trust It**
   - The data shows that certain months (like March, September, December) and specific days (1st, 3rd, 10th, 25th) had better conversion rates than others.
   - However, the dataset does not reveal how each campaign was conducted, such as who made the call, the tone of the messaging, or which types of customers were contacted. These missing factors may have influenced conversions and should be taken into account when interpreting the results.
   - So while these timing patterns are interesting, they should be treated as starting points for A/B testing, not fixed rules.
 
-6. Use the Best Contact Channels
+**6. Use the Best Contact Channels**
   - Mobile and telephone calls are the most effective. They lead to over 50% of sign-ups.
   - Avoid or fix channels that show poor results (like the “unknown” type) to save effort and improve results.
 
-7. Score and Prioritize Your Leads
+**7. Score and Prioritize Your Leads**
   - Use what you know, like how long someone stays on the phone, their job, or whether they’ve said "yes" before, to rank leads by potential.
   - Focus your team’s time and budget on those with higher chances of converting.
 
-8. Avoid Being Too Pushy
+**8. Avoid Being Too Pushy**
   - Be careful not to annoy potential customers with too many calls.
   - If someone clearly isn’t interested after a few contacts, let them go.
   - This not only protects your brand image, it also respects your audience’s time.
