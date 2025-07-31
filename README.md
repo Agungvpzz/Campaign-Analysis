@@ -74,9 +74,9 @@ https://www.kaggle.com/datasets/janiobachmann/bank-marketing-dataset?resource=do
   <img width="1104" height="472" alt="image" src="https://github.com/user-attachments/assets/fa8fd0e1-2b90-4de3-8f94-741d216bc8cb" />
 </div>
 
-- Longer calls, higher conversions: Longer call durations stand out with the highest positive correlation to conversion rate (0.45). It’s a clear signal—when prospects are genuinely curious, they stick around, ask questions, and engage meaningfully. Shorter calls often signal disinterest or early drop-off.
+- Longer calls, higher conversions: Longer call durations stand out with the highest positive correlation to conversion rate (0.45). It’s a clear signal, when prospects are genuinely curious, they stick around, ask questions, and engage meaningfully. Shorter calls often signal disinterest or early drop-off.
 - Echoes from the past: Customers with more touchpoints from previous campaigns show a mild uptick in conversion likelihood (correlation 0.14). While not a strong effect, it suggests that past engagement might prime them for future decisions.
-- Too much contact, too little interest: Oddly enough, heavy outreach during the current campaign seems counterproductive. With a slightly negative correlation of -0.13, it hints at possible oversaturation—where repeated contact might cause customers to tune out or resist the offer altogether.
+- Too much contact, too little interest: Oddly enough, heavy outreach during the current campaign seems counterproductive. With a slightly negative correlation of -0.13, it hints at possible oversaturation, where repeated contact might cause customers to tune out or resist the offer altogether.
 
 
 ## E. Customer Segment Analysis
@@ -90,7 +90,7 @@ https://www.kaggle.com/datasets/janiobachmann/bank-marketing-dataset?resource=do
 </p>
 
 - Customers with no credit history (default = no), no personal loan, and no housing loan show the highest conversion rate at 60%, with a conversion count of 3,120, contributing to approximately 59% of total conversions.
-- In contrast, customers with no credit history and no personal loan, but who do have a housing loan, show a lower conversion rate of 38%—nearly half the rate of those without a housing loan.
+- In contrast, customers with no credit history and no personal loan, but who do have a housing loan, show a lower conversion rate of 38%, nearly half the rate of those without a housing loan.
 - Customers who end up subscribing to a term deposit generally have higher account balances, whether you're looking at the total, average, or median values.
   - However, the effect size is relatively small, so the difference isn't particularly strong.
 
@@ -113,17 +113,17 @@ https://www.kaggle.com/datasets/janiobachmann/bank-marketing-dataset?resource=do
 
 - At the 5-minute mark:
   - 84% of non-converting customers have already ended the call, effectively rejecting the campaign.
-  - Manwhile, 42% of converting customers have also disconnected—indicating that a sizable portion of subscribers make quick, confident decisions.
+  - Manwhile, 42% of converting customers have also disconnected, indicating that a sizable portion of subscribers make quick, confident decisions.
 - At the 15-minute mark:
   - 99% of non-converting customers have hung up, suggesting that nearly all rejection decisions are made by this point. It's safe to say that callers remaining after this threshold are highly likely to subscribe.
-  - 90% of converting customers have also exited the call by now. The remaining 10%—still engaged beyond the 15-minute mark—represent strong potential for conversion.
+  - 90% of converting customers have also exited the call by now. The remaining 10%, still engaged beyond the 15-minute mark, represent strong potential for conversion.
 
 **Call Duration: A Behavioral Filter for Conversion Likelihood**
 - In the Bank Portugal campaign, call duration emerges as a valuable predictive signal. By analyzing when customers end calls, we observe distinct behavioral profiles:
-  - Rejecters typically disengage early—often within the first few minutes—signaling low intent and minimal interest.
+  - Rejecters typically disengage early, often within the first few minutes, signaling low intent and minimal interest.
   - Subscribers, on the other hand, tend to stay on longer, engaging in more substantive conversations around the offer.
-- These patterns indicate that call length isn't a persuasive force on its own—it’s a self-selection mechanism. Longer calls don’t drive conversions directly, but they reveal which customers are genuinely interested. By the 15-minute mark, nearly all non-converters have dropped off, leaving behind a high-intent segment with strong conversion potential.
-- This makes call duration a powerful tool for lead scoring and agent prioritization—not as a tactic to stretch conversations, but as a signal to guide targeting decisions and optimize engagement strategy.
+- These patterns indicate that call length isn't a persuasive force on its own, it’s a self-selection mechanism. Longer calls don’t drive conversions directly, but they reveal which customers are genuinely interested. By the 15-minute mark, nearly all non-converters have dropped off, leaving behind a high-intent segment with strong conversion potential.
+- This makes call duration a powerful tool for lead scoring and agent prioritization, not as a tactic to stretch conversations, but as a signal to guide targeting decisions and optimize engagement strategy.
 
 ### 6. Does repeated contact increase conversions
 <p align="center">
@@ -140,7 +140,7 @@ https://www.kaggle.com/datasets/janiobachmann/bank-marketing-dataset?resource=do
   <img width="1109" height="450" alt="image" src="https://github.com/user-attachments/assets/4dcdd1fe-a4da-4697-a664-101ae489249f" />
 </p>
 
-- The chart shows a strong improvement in conversion rates with repeated contact. From the 1st to 5th contact, conversion rates increase significantly—from 48.42% to 95.22%.
+- The chart shows a strong improvement in conversion rates with repeated contact. From the 1st to 5th contact, conversion rates increase significantly, from 48.42% to 95.22%.
 - This suggests that follow-up attempts are very effective initially.
 - Beyond the 5th or 6th contact, additional outreach adds only marginal gains in conversion (e.g., from 95.22% at contact 5 to 99.11% at contact 10).
 - The optimal number of contacts is 4 to 5. At this stage:
@@ -164,13 +164,13 @@ https://www.kaggle.com/datasets/janiobachmann/bank-marketing-dataset?resource=do
 </p>
 
 - The stacked bar chart highlights a significant drop-off in conversion across all contact types: over 75% of contacts do not result in a customer subscription. On average, it takes 4 to 5 contact attempts to secure a single conversion.
-- The 'unknown' contact type shows the greatest inefficiency. Of 6,442 outreach attempts, only 530 led to a subscription—a conversion rate of just 8.2%, well below the 10% threshold.
+- The 'unknown' contact type shows the greatest inefficiency. Of 6,442 outreach attempts, only 530 led to a subscription, a conversion rate of just 8.2%, well below the 10% threshold.
 - This suggests a need to rethink resource allocation, especially toward poorly performing segments like the 'unknown' contact type. Streamlining contact efforts could help minimize waste and improve overall conversion efficiency.
 
 
 
 ## H. Optimizing Outreach Timing: One-Attempt Analysis
-Under the "Optimizing Campaign Timing" section, we filter the dataset to include only records where the number of contacts equals one. This constraint allows us to precisely assess which specific contact date influences campaign effectiveness. When a customer has multiple contact attempts, the dataset does not indicate when earlier contacts occurred—making it impossible to isolate the impact of any single date.
+Under the "Optimizing Campaign Timing" section, we filter the dataset to include only records where the number of contacts equals one. This constraint allows us to precisely assess which specific contact date influences campaign effectiveness. When a customer has multiple contact attempts, the dataset does not indicate when earlier contacts occurred, making it impossible to isolate the impact of any single date.
 
 ### 9. Are there specific days, weeks, or months with significantly higher conversion rates?
 
@@ -215,7 +215,7 @@ Under the "Optimizing Campaign Timing" section, we filter the dataset to include
 - This indicates that the day of the month has a meaningful impact on conversion outcomes, suggesting that campaign timing could be optimized at a daily granularity.
 
 **High-Performing Days**
-- Several days—1, 3, 10, 22, 25, 27, and 71—consistently demonstrate elevated conversion rates near 70%, positioning them as high-opportunity dates for contact efforts.
+- Several days, 1, 3, 10, 22, 25, 27, and 71, consistently demonstrate elevated conversion rates near 70%, positioning them as high-opportunity dates for contact efforts.
 - These days may warrant targeted scheduling to capitalize on stronger behavioral responses.
 
 **Low-Performing Day**
