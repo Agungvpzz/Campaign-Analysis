@@ -292,29 +292,34 @@ Our model correctly classified 1948 out of 2233 cases.
 1. Make the Most of the First Contact
   - Nearly half of the successful sign-ups happen on the first call.
   - This means it’s critical to target the right people from the beginning. Use customer data and past results to prioritize the most likely responders right away.
+
 2. Follow Up, But Not Too Much
   - People often need more than one nudge. In fact, over 50% of conversions happen after the first contact, especially by the 4th or 5th attempt.
   - But calling too many times after that brings little benefit and wastes time. Stop after 5 tries to save resources while keeping results strong.
+
 3. Pay Attention to Call Duration
   - If someone stays longer on the phone, it usually means they’re curious or considering the offer.
   - On the flip side, short calls often signal rejection.
   - Use this to your advantage: follow up quickly with longer-call leads while reducing effort on those who hang up early.
+
 4. Focus on the Right Groups
   - Retired people and students are more likely to accept the offer, probably because they’re less busy and more open to having a conversation.
   - Create custom messages and special strategies for these groups to improve results even further.
+
 5. Choose the Right Timing – But Test Before You Trust It
   - The data shows that certain months (like March, September, December) and specific days (1st, 3rd, 10th, 25th) had better conversion rates than others.
   - However, the dataset does not reveal how each campaign was conducted, such as who made the call, the tone of the messaging, or which types of customers were contacted. These missing factors may have influenced conversions and should be taken into account when interpreting the results.
   - So while these timing patterns are interesting, they should be treated as starting points for A/B testing, not fixed rules.
+
 6. Use the Best Contact Channels
   - Mobile and telephone calls are the most effective. They lead to over 50% of sign-ups.
   - Avoid or fix channels that show poor results (like the “unknown” type) to save effort and improve results.
+
 7. Score and Prioritize Your Leads
   - Use what you know, like how long someone stays on the phone, their job, or whether they’ve said "yes" before, to rank leads by potential.
   - Focus your team’s time and budget on those with higher chances of converting.
+
 8. Avoid Being Too Pushy
   - Be careful not to annoy potential customers with too many calls.
   - If someone clearly isn’t interested after a few contacts, let them go.
   - This not only protects your brand image, it also respects your audience’s time.
-
-
